@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ticket</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- google awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+    <!-- tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                dark:'#131318',
+                B:'#030712',
+                g: '#1DD100',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+   <!-- navbar start -->
+   <nav class="mx-2 lg:mx-auto lg:w-5/6">
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home </a></li>
+          <li><a>Destination</a></li>
+          <li><a>Search</a></li>
+          <li><a>Search</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-4xl font-extrabold">E-Ticket</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-xl">
+          <li><a>Home </a></li>
+          <li><a>Destination</a></li>
+          <li><a>Search</a></li>
+          <li><a>Search</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn text-g text-xl font-bold">Bus <img src="./images/bus-icon.png" alt=""></a>
+      </div>
+    </div>
+
+   </nav>
+    <!-- navbar end -->
+    <main class="mx-2 lg:mx-auto lg:w-5/6">
+      <!-- banner section start -->
+      <section class="w-full rounded-3xl">
+        <div class="hero w-full h-[550px] lg:h-[780px] " style="background-image: url(./images/banner.png);background-position: center; background-size: cover; background-repeat: no-repeat;">
+          <div class="hero-overlay bg-opacity-10 rounded-3xl"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="min-w-md lg:font-extrabold lg:px-28">
+              <h1 class="mb-5 text-4xl font-extrabold lg:text-7xl">End-to-End Travel with</h1>
+              <h2 class=" text-3xl font-extrabold lg:text-6xl text-g mb-5">E Paribahan</h2>
+              <p class="mb-5"></p>Travel opens the door to a world of discovery, where the pages of your passport tell the stories of cultures embraced,<br> sunsets witnessed, and the uncharted paths that lead to unforgettable adventures."</p>
+              <button class="btn btn-primary bg-g text-B hover:text-white font-bold text-2xl mt-8">Buy Tickets</button>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="card1"></div>
+            <div class="card2"></div>
+            <div class="card3"></div>
+          </div>
+        </div>
+      </section>
+   
+      <!-- banner section end -->
+    </main>
+    <footer></footer>
+   
+    
+ <script src="./js/script.js"></script>
+</body>
+</html>
